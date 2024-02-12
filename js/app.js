@@ -1,12 +1,9 @@
-//import { signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js"
 import { signInWithEmailAndPassword } from "firebase/auth";
-
-//import { auth } from "./firebase.js";
-
+import { auth } from "./firebase.js";
 
 const loginForm = document.querySelector("#formLogin");
 
-loginForm.addEventListener("submit", async(e) => {
+loginForm.addEventListener("submit", async (e) => {
     e.preventDefault();
 
     const email = loginForm["correo"].value;
@@ -14,23 +11,21 @@ loginForm.addEventListener("submit", async(e) => {
 
     console.log(`Correo: ${email}, Contraseña: ${password}`);
 
-    try{
+    try {
         const userCredentials = await signInWithEmailAndPassword(auth, email, password);
-        console.log("Bienvenido "+ userCredentials.user.email);
+        console.log("Bienvenido " + userCredentials.user.email);
         window.location.href = "principal.html";
-    }
-    catch(error){
+    } catch (error) {
         console.log(error);
-        if(error.code === 'auth/invalid-login-credentials'){
-          console.log('DATOS INCORRECTOOOOS:v');
+        if (error.code === 'auth/invalid-login-credentials') {
+            console.log('DATOS INCORRECTOS');
         }
-        
     }
-})
+});
 
 document.addEventListener('DOMContentLoaded', function () {
-  const isLoggedIn = localStorage.getItem('isLoggedIn');
-  if (isLoggedIn === 'true') {
-      window.location.href = 'principal.html';
-  }
+    const isLoggedIn = localStorage.getItem('isLoggedIn');
+    if (isLoggedIn === 'true') {
+        window.location.href = 'principal.html';
+    }
 });
