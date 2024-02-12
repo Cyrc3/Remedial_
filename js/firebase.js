@@ -2,22 +2,24 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebas
 import { getAuth } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js"
 import { getFirestore } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js"
 
+import { initializeApp } from "firebase/app";
+
 const firebaseConfig = {
 
-    apiKey: "AIzaSyDiyn1wNdTXaJPDLRts2EyQDdhFDe1zIRE",
-  
-    authDomain: "web40miau.firebaseapp.com",
-  
-    projectId: "web40miau",
-  
-    storageBucket: "web40miau.appspot.com",
-  
-    messagingSenderId: "123681011240",
-  
-    appId: "1:123681011240:web:2b59d4ea845ec03e95e71d"
+  apiKey: "AIzaSyDiyn1wNdTXaJPDLRts2EyQDdhFDe1zIRE",
 
-  };
-  
+  authDomain: "web40miau.firebaseapp.com",
+
+  projectId: "web40miau",
+
+  storageBucket: "web40miau.appspot.com",
+
+  messagingSenderId: "123681011240",
+
+  appId: "1:123681011240:web:2b59d4ea845ec03e95e71d"
+
+};
+
 
 export const app= initializeApp(firebaseConfig);
 export const auth = getAuth(app);
