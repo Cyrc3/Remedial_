@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', monospace;
+    background-color: #f6e6ff; /* Rosita pastel */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #4d4dff; /* Azul oscuro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%; /* Abarcar toda la pantalla */
+    max-width: 400px; /* Ajustar el ancho máximo según sea necesario */
+}
+
+.login-form {
+    width: 100%; /* Abarcar toda la pantalla */
+    max-width: 300px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrar el formulario dentro del contenedor */
+}
+
+h1 {
+    color: #ff4d94; /* Rosita pastel más oscuro */
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #ff4d94; /* Rosita pastel más oscuro */
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ff4d94; /* Rosita pastel más oscuro */
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+}
+
+button {
+    background-color: #ff4d94; /* Rosita pastel más oscuro */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #ff99cc; /* Rosita pastel más oscuro - tono más claro al pasar el ratón */
+}
+
+/*registro*/
+.close-button,
+.register-button {
+    background-color: #80d4ff; /* Azul pastel */
+    color: #0d47a1; /* Azul oscuro */
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+.close-button:hover,
+.register-button:hover {
+    background-color: #b3e5fc; /* Azul pastel más claro */
+}
+
+.register-container {
+    background-color: #4d4dff; /* Azul oscuro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bienvenido a tu cuenta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFD1DC; /* Pastel pink background color */
+        }
+        .welcome-message {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .welcome-message h1 {
+            color: #D6306B; /* Pastel pink text color */
+        }
+        .user-info {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .user-info strong {
+            color: #333;
+        }
+        .user-actions {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .user-actions a {
+            background-color: #D6306B; /* Pastel pink button color */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+        .user-actions a:hover {
+            background-color: #C22355; /* Slightly darker pastel pink button color */
+        }
+        .welcome-card {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            background-color: #ffffff;
+            text-align: center;
+            max-width: 400px;
+            margin: 0 auto;
+            margin-top: 50px; /* Ajusta según sea necesario */
+        }
+
+        .welcome-message {
+            margin-bottom: 20px;
+        }
+
+        .user-actions a {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            text-decoration: none;
+            background-color: #007bff;
+            color: #ffffff;
+            border-radius: 5px;
+        }
+        header {
+            background-color: #333; /* Puedes personalizar el color de fondo */
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000; /* Asegura que la barra de navegación esté por encima del resto del contenido */
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white; /* Puedes personalizar el color del texto */
+        }
+    </style>
+      <link
+      rel="stylesheet"
+      href="styles.css";
+    />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">INICIAR SESIÓN</a></li>
+                <li> 
+                    <button id="logoutButton" class="logoutButton" style="width: 100px; height: 30px; font-size: 14px;">Cerrar</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="welcome-card">
+        <div class="welcome-message">
+            <h1>Bienvenid@ a tu cuenta!</h1>
+            <p>Estamos encantados de que te unas a nosotros.</p>
+        </div>
+        <div class="user-info">
+        </div>
+        <div class="user-actions">
+        <button type="button" class="close-button" onclick= "window.location.href='/index.html'">Regresar al inicio de sesión</button>
+        </div>
+    </div>
+
+    <script type="module" src="/js/principal.js"></script>
+</body>
+</html>

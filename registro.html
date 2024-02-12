@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registrarse</title>
+</head>
+<body>
+    <div class="register-container">
+        <form id="formRegistro" name="formRegistro"  class="register-form" >
+            <h1>REGISTRARSE</h1>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="correo-registro">Correo electrónico:</label>
+            <input type="email" id="correo-registro" name="correo-registro" required>
+            <label for="contrasena-registro">Contraseña:</label>
+            <input type="contrasena" id="contrasena-registro" name="contrasena-registro" required>
+            <button type="submit">Registrarse</button>
+        </form>
+        <button class="close-button" onclick="closeRegister()">Ya tienes una cuenta?</button>
+    </div>
+
+    <script>
+        function closeRegister() {
+           
+            window.location.href = "/";
+        }
+
+    </script>
+    <script src="/js/registro.js" type="module"></script>
+
+
+</body>
+</html>
